@@ -1,16 +1,36 @@
 $color_bg_primary: #4C55A8;
+$color_bg_secondary: rgba(241, 241, 241, 0.4);
+$rounded_radius : 8px;
+$text_color_dark: #040B4A;
 
 .background_primary {
     background-color: $color_bg_primary;
+}
+
+.background_secondary{
+    background-color: $color_bg_secondary;
 }
 
 .youTubeContainer {
     width: 100%;
     -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
     -webkit-transform: rotate(0.000001deg);
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
+    -webkit-border-radius: $rounded_radius;
+    -moz-border-radius: $rounded_radius;
+    border-radius: $rounded_radius;
     overflow: hidden;
     display: inline-flex;
+}
+
+.shadow_box{
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.35), 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: $rounded_radius;
+}
+
+.rounded_box{
+    border-radius: $rounded_radius;
+}
+
+.text_color_dark{
+    color: $text_color_dark;
 }
