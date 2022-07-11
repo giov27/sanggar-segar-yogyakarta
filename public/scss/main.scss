@@ -1,14 +1,41 @@
 $color_bg_primary: #4C55A8;
-$color_bg_secondary: rgba(241, 241, 241, 0.4);
+$color_bg_secondary: #6673E3;
+$card_bg_first: rgba(241, 241, 241, 0.4);
+$card_bg_second: #3AD6ABCC;
 $rounded_radius : 8px;
 $text_color_dark: #040B4A;
+$text_color_primary: #106CA3;
 
 .background_primary {
     background-color: $color_bg_primary;
 }
 
-.background_secondary{
+.background_secondary {
     background-color: $color_bg_secondary;
+}
+
+.background_free_class{
+    background-color: $text_color_dark;
+}
+
+.card_bg_first{
+    background-color: $color_bg_secondary;
+}
+
+.card_bg_secondary{
+    background-color: $card_bg_second;
+}
+
+.text_color_dark{
+    color: $text_color_dark;
+}
+
+.text_color_primary{
+    color:$text_color_primary;
+}
+
+.rounded_box{
+    border-radius: $rounded_radius;
 }
 
 .youTubeContainer {
@@ -27,10 +54,3 @@ $text_color_dark: #040B4A;
     border-radius: $rounded_radius;
 }
 
-.rounded_box{
-    border-radius: $rounded_radius;
-}
-
-.text_color_dark{
-    color: $text_color_dark;
-}

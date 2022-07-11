@@ -3,17 +3,41 @@
 
 <head>
     <%- include('../partials/head') %>
+    <link rel="stylesheet" href="/css/main.css">
     <title>About</title>
 </head>
 
 <body>
-    <h1>About</h1>
-    <ul>
-        <li>Nanana</li>
-        <li>NONONO</li>
-        <li>YAYAYA</li>
-        <li>YEYEYEY</li>
-    </ul>
+    <%- include('../partials/navbar') %>
+    <div class="container-fluid background_primary">
+        <div class="d-flex align-items-center justify-content-center" style="height: 30vh;">
+            <h1 class="my-auto text-white">Tentang Sanggar Segar</h1>
+        </div>
+    </div>
+    <div class="container">
+        <h4 class="text_color_dark">Studio sanggar yang membantumu menjadi TOP 10% Talenta Indonesia dalam dunia Seni</h4>
+        <p>Pelajari keahlian dan rahasia untuk mewujudkan karir dan masa depan impianmu.</p>
+        <div class="text-center">
+            <h3 class="text_color_dark">Visi</h3>
+            <p>Mencetak tenaga kerja Profesional dibidang Instruktur / Pelatih Senam Aerobik sebagai pemandu kebugaran senam dimasyarakat secara legal.</p>
+            <p class="text_color_dark"><i>“Mahir dalam Praktiknya dari Awam”</i></p>
+            <h3 class="text_color_dark">Misi</h3>
+            <p>Mengerahkan dan mengembangkan para tenaga pemandu kebugaran senam dimasyarakat melalui Kursus Pelatih Senam sesuai aturan Standar Kompetensi Lulusan (Etika, Praktek secara nyata, dan Ilmu Pengetahuan Keolahragaan).</p>
+            <p class="text_color_dark"><i>“Berbagi, Berproses, Berkesinambungan”</i></p>
+            <h3 class="text_color_dark">Fasilitas Studio</h3>
+            <p>Mulai dari materi hingga studio dan matras. Sanggar Segar punya berbagai fasilitas yang lengkap untuk menemani aktivitasmu dalam memahami seni.</p>
+            <h1>{{carousel and fasilitas}}</h1>
+            <h3 class="text_color_dark">Tim Sanggar Segar</h3>
+            <p>Mereka yang ahli dalam bidangnya dan siap untuk membimbing kamu dalam proses belajar seni di Sanggar Segar</p>
+            <h1>{{carousel INSTRUKTUR}}</h1>
+            <h3 class="text_color_dark">Media Partner</h3>
+            <h1>{{carousel Media Partner}}</h1>
+            <h3 class="text_color_dark">Lokasi Sanggar Segar</h3>
+            <p>Ingin tahu dimana lokasi sanggar segar?</p>
+            <h1>{{MAPS}}</h1>
+        </div>
+    </div>
+    <%- include('../partials/footer') %>
 </body>
 
 </html>
