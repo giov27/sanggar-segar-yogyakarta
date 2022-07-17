@@ -1,12 +1,62 @@
-$color_bg_primary: #4C55A8;
-$color_bg_secondary: #6673E3;
-$card_bg_first: rgba(241, 241, 241, 0.4);
-$card_bg_second: #3AD6ABCC;
-$rounded_radius : 8px;
-$text_color_dark: #040B4A;
-$text_color_primary: #106CA3;
+// Utilities
+@import "variables";
+@import "carousel";
+
+body{
+    font-family: $font_1;
+}
+
+.title{
+    font-size: $fs_24;
+    font-weight: bold;
+    &__start{
+        @extend .title;
+        margin-top: $m_28;
+    }
+    &__center{
+        @extend .title;
+        text-align: center;
+        margin-top: $m_28;
+    }
+}
+
+.desc{
+    font-size: $fs_14;
+    font-weight: 400;
+    margin-top: $m_16;
+    &__center{
+        @extend .desc;
+        text-align: center;
+    }
+}
+
+.card_box{
+    border-radius: $rounded_radius;
+    padding: 6px 0;
+    background-color: $support_color3_40;
+    ;
+    &__text{
+        color: white;
+        font-weight: 500;
+        font-size: 12px;
+    }
+    &__text_button{
+        color: $alternative_color2;
+        font-weight: 600;
+        font-size: $fs_14;
+        background-color: $support_color3;
+    }
+}
+
+.background_second{
+    padding-top: $m_16;
+    background-color: $support_color2;
+}
+
+
 
 .background_primary {
+    padding: $m_16 0;
     background-color: $color_bg_primary;
 }
 
@@ -16,6 +66,9 @@ $text_color_primary: #106CA3;
 
 .background_free_class{
     background-color: $text_color_dark;
+    padding: 0 0 1rem 0;
+    margin: 0.25rem;
+    border-radius: $rounded_radius;
 }
 
 .card_bg_first{
@@ -24,10 +77,6 @@ $text_color_primary: #106CA3;
 
 .card_bg_secondary{
     background-color: $card_bg_second;
-}
-
-.text_color_dark{
-    color: $text_color_dark;
 }
 
 .text_color_primary{

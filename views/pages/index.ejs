@@ -10,95 +10,97 @@
 <body>
     <%- include('../partials/navbar') %>
     <div class="background_primary">
-        <div class="container py-5">
+        <div class="container pt-5">
             <div class="shadow_box">
                 <div class="ratio ratio-21x9  py-5 youTubeContainer">
                     <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video"></iframe>
                 </div>
             </div>
-            <div class="text-white mt-4 container">
-                <h1 class="">Belajar Seni yang Bugar<br> Gabungnya di Sanggar Segar</h1>
-                <p>Instruktur pelatihan terbaik dan berpengalaman akan ngajarin kamu sampai 
+            <div class="text-white container">
+                <h1 class="title__start">Belajar Seni yang Bugar Gabungnya di Sanggar Segar</h1>
+                <p class="desc">Instruktur pelatihan terbaik dan berpengalaman akan ngajarin kamu sampai 
                     benar-benar memahami dan mendapat keahlian dari program seni yang diikuti 
                     untuk pilihan terbaik dari masa depan kamu.
                 </p>
-                <div class="card_bg_first rounded_box row py-2 align-items-center">
-                    <div class="col-4">
-                        <button type="button" class="btn btn-light text_color_dark fw-semibold col-12">Daftar Kelas</button>
+                <div class="card_box row align-items-center">
+                    <div class="col-5">
+                        <button type="button" class="btn card_box__text_button col-12">Daftar Kelas</button>
                     </div>
-                    <div class="col-8">
-                        <p class="text-white mb-0">Daftarkan keanggotaanmu untuk mendapatkan diskon & paket spesial</p>
+                    <div class="col-7">
+                        <p class="card_box__text mb-0">Daftarkan keanggotaanmu untuk mendapatkan diskon & paket spesial</p>
                     </div>
                 </div>
-                <div class="card_bg_first rounded_box row py-2 align-items-center mt-2">
-                    <div class="col-4">
-                        <button type="button" class="btn btn-light text_color_dark fw-semibold col-12">Lihat Demo</button>
+                <div class="card_box row align-items-center mt-2">
+                    <div class="col-5">
+                        <button type="button" class="btn card_box__text_button col-12">Lihat Demo</button>
                     </div>
-                    <div class="col-8">
-                        <p class="text-white mb-0">Simak video pelatihan dari instruktur berpengalaman </p>
+                    <div class="col-7">
+                        <p class="card_box__text mb-0">Simak video pelatihan dari instruktur berpengalaman untuk program pilihanmu </p>
                     </div>
                 </div>
             </div>
             <!-- Fasilitas Studio -->
-            <div class="text-white mt-3 text-center">
-                <h1 class="">Fasilitas Studio</h1>
-                <p>Mulai dari materi hingga studio dan matras. Sanggar Segar punya berbagai 
+            <div class="text-white my-3 text-center">
+                <h1 class="title__center">Fasilitas Studio</h1>
+                <p class="desc__center">Mulai dari materi hingga studio dan matras. Sanggar Segar punya berbagai 
                     fasilitas yang lengkap untuk menemani aktivitasmu dalam memahami seni.
                 </p>
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-                    <!-- <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div> -->
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="/img/fasilitasBarbel.png" class="d-block w-100" alt="Fasilitas Barbel">
-                        <div class="carousel-caption d-block">
-                          <h5>First slide label</h5>
-                          <p>Some representative placeholder content for the first slide.</p>
-                        </div>
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="card">
+                          <img src="/img/fasilitasBarbel.png" class="d-block w-100" alt="...">
+                          <div class="card-body">
+                              <h6 class="card-title">Barbel</h6>
+                          </div>
                       </div>
-                      <div class="carousel-item">
-                        <img src="/img/fasilitasMatras.png" class="d-block w-100" alt="Fasilitas Matras">
-                        <div class="carousel-caption d-block">
-                          <h5>Second slide label</h5>
-                          <p>Some representative placeholder content for the second slide.</p>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="/img/fasilitasKelas.png" class="d-block w-100" alt="Fasilitas Kelas">
-                        <div class="carousel-caption d-block">
-                          <h5>Third slide label</h5>
-                          <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="card">
+                        <img src="/img/fasilitasMatras.png" class="d-block w-100" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title 2</h5>
                         </div>
                       </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="carousel-item">
+                        <div class="card">
+                          <img src="/img/fasilitasKelas.png" class="d-block w-100" alt="...">
+                          <div class="card-body">
+                              <h5 class="card-title">Card title 2</h5>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
             </div>
+        </div>
+      </div>
+      <div class="background_second">
+        <div class="container">
             <!-- Kelas Senam -->
-            <div class="mt-3 text-center text-white">
-                <h1>Jelajahi Kelas Senam</h1>
-                <p>Berbagai macam pilihan kelas senam maupun seni 
+            <div class="text-center text-white">
+                <h1 class="title__center">Jelajahi Kelas Senam</h1>
+                <p class="desc__center">Berbagai macam pilihan kelas senam maupun seni 
                     dengan metode pelatihan terbaik yang sesuai dengan keinginanmu
                 </p>
                 <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <div class="accordion-item mb-2 rounded_box">
+                      <h2 class="mb-0" id="headingOne">
+                        <button class="accordion-button bg-white rounded_box" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                           Kelas Umum
                         </button>
                       </h2>
                       <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        <div class="accordion-body p-0 pb-4 background_free_class">
+                        <div class="background_free_class">
                           <img class="img-fluid" src="/img/kelas_senam1.png">
                           <div class="container text-center text-white">
                             <h4>Aerobic (Fun)</h4>
@@ -127,34 +129,46 @@
                         </div>
                       </div>
                     </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          Accordion Item #2
+                    <div class="accordion-item mb-2 rounded_box">
+                      <h2 class="mb-0" id="headingOne">
+                        <button class="accordion-button bg-white rounded_box collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Program level II & III
                         </button>
                       </h2>
                       <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        <div class="background_free_class">
+                          <img class="img-fluid" src="/img/kelas_senam1.png">
+                          <div class="container text-center text-white">
+                            <h4>Aerobic (Fun)</h4>
+                            <hr>
+                            <p>“Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.”</p>
+                            <a href="#" class="btn btn-secondary">Lihat Selengkapnya</a>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                          Accordion Item #3
-                        </button>
-                      </h2>
-                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        <div class="accordion-body p-0 pb-4 background_free_class my-2">
+                          <img class="img-fluid" src="/img/kelas_senam1.png">
+                          <div class="container text-center text-white">
+                            <h4>Aerobic (Fun)</h4>
+                            <hr>
+                            <p>“Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.”</p>
+                            <a href="#" class="btn btn-secondary">Lihat Selengkapnya</a>
+                          </div>
+                        </div>
+                        <div class="accordion-body p-0 pb-4 background_free_class my-2">
+                          <img class="img-fluid" src="/img/kelas_senam1.png">
+                          <div class="container text-center text-white">
+                            <h4>Aerobic (Fun)</h4>
+                            <hr>
+                            <p>“Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.”</p>
+                            <a href="#" class="btn btn-secondary">Lihat Selengkapnya</a>
+                          </div>
                         </div>
                       </div>
                     </div>
                 </div>
-                <div class="mt-2">
+                <!-- <div class="mt-2">
                     <button class="btn btn-secondary fw-semibold">Lihat Semua Kelas</button>
-                </div>
+                </div> -->
             </div>
             <!-- Instruktur Pelatihan -->
             <div class="mt-3 text-center text-white">
@@ -245,21 +259,27 @@
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="/img/fasilitasBarbel.png" class="d-block w-100" alt="Fasilitas Barbel">
+              <div class="img-wrapper">
+                <img src="/img/fasilitasBarbel.png" class="d-block w-100" alt="Fasilitas Barbel">
+              </div>
               <div class="carousel-caption d-block">
                 <h5>First slide label</h5>
                 <p>Some representative placeholder content for the first slide.</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="/img/fasilitasMatras.png" class="d-block w-100" alt="Fasilitas Matras">
+              <div class="img-wrapper">
+                <img src="/img/fasilitasMatras.png" class="d-block w-100" alt="Fasilitas Matras">
+              </div>
               <div class="carousel-caption d-block">
                 <h5>Second slide label</h5>
                 <p>Some representative placeholder content for the second slide.</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="/img/fasilitasKelas.png" class="d-block w-100" alt="Fasilitas Kelas">
+              <div class="img-wrapper">
+                <img src="/img/fasilitasKelas.png" class="d-block w-100" alt="Fasilitas Kelas">
+              </div>
               <div class="carousel-caption d-block">
                 <h5>Third slide label</h5>
                 <p>Some representative placeholder content for the third slide.</p>
@@ -288,6 +308,7 @@
       </div>
     </div>
     <%- include('../partials/footer') %>
+    <script src="/js/card-slider.js"></script>
   </body>
 </body>
 
