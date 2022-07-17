@@ -51,6 +51,21 @@ body {
   background-color: #F1F1F1;
 }
 
+.accordion {
+  --bs-accordion-inner-border-radius: 8px;
+  --bs-accordion-border-radius: 8px;
+}
+
+.accordion-button {
+  font-size: 14px;
+  font-weight: 700;
+  color: #040B4A;
+}
+
+.margin__section {
+  margin-top: 64px;
+}
+
 .background_second {
   padding-top: 16px;
   background-color: #106CA3;
@@ -62,6 +77,7 @@ body {
 }
 
 .background_secondary {
+  margin: 28px 0;
   background-color: #6673E3;
 }
 
