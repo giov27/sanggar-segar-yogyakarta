@@ -2,121 +2,119 @@
 @import "variables";
 @import "carousel";
 
-body{
-    font-family: $font_1;
+body {
+  font-family: $font_1;
 }
 
-.title{
-    font-size: $fs_24;
-    font-weight: bold;
-    &__start{
-        @extend .title;
-        margin-top: $m_28;
-    }
-    &__center{
-        @extend .title;
-        text-align: center;
-        margin-top: $m_28;
-    }
+.title {
+  font-size: $fs_24;
+  font-weight: bold;
+  &__start {
+    @extend .title;
+    margin-top: $m_28;
+  }
+  &__center {
+    @extend .title;
+    text-align: center;
+    margin-top: $m_28;
+  }
 }
 
-.desc{
-    font-size: $fs_14;
-    font-weight: 400;
-    margin-top: $m_16;
-    &__center{
-        @extend .desc;
-        text-align: center;
-    }
+.desc {
+  font-size: $fs_14;
+  font-weight: 400;
+  margin-top: $m_16;
+  &__center {
+    @extend .desc;
+    text-align: center;
+  }
 }
 
-.card_box{
-    border-radius: $rounded_radius;
-    padding: 6px 0;
-    background-color: $support_color3_40;
-    ;
-    &__text{
-        color: white;
-        font-weight: 500;
-        font-size: 12px;
-    }
-    &__text_button{
-        color: $alternative_color2;
-        font-weight: 600;
-        font-size: $fs_14;
-        background-color: $support_color3;
-    }
-}
-
-.accordion{
-    --bs-accordion-inner-border-radius: 8px;
-    --bs-accordion-border-radius: 8px;
-}
-
-.accordion-button{
-    font-size: $fs_14;
-    font-weight: 700;
+.card_box {
+  border-radius: $rounded_radius;
+  padding: 6px 0;
+  background-color: $support_color3_40;
+  &__text {
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  &__text_button {
     color: $alternative_color2;
+    font-weight: 600;
+    font-size: $fs_14;
+    background-color: $support_color3;
+  }
 }
 
-.margin{
-    &__section{
-        margin-top: $m_64;
-    }
+.accordion {
+  --bs-accordion-inner-border-radius: 8px;
+  --bs-accordion-border-radius: 8px;
 }
 
-.background_second{
-    padding-top: $m_16;
-    background-color: $support_color2;
+.accordion-button {
+  font-size: $fs_14;
+  font-weight: 700;
+  color: $alternative_color2;
 }
 
+.margin {
+  &__instructur {
+    margin-top: $m_64;
+    padding-bottom: $m_64;
+  }
+}
+
+.background_second {
+  padding-top: $m_16;
+  background-color: $support_color2;
+}
 
 .background_primary {
-    padding: $m_16 0;
-    background-color: $color_bg_primary;
+  padding: $m_16 0;
+  background-color: $color_bg_primary;
 }
 
 .background_secondary {
-    margin: $m_28 0;
-    background-color: $color_bg_secondary;
+  margin: $m_28 0;
+  background-color: $color_bg_secondary;
 }
 
-.background_free_class{
-    background-color: $text_color_dark;
-    padding: 0 0 1rem 0;
-    margin: 0.25rem;
-    border-radius: $rounded_radius;
+.background_free_class {
+  background-color: $text_color_dark;
+  padding: 0 0 1rem 0;
+  margin: 0.25rem;
+  border-radius: $rounded_radius;
 }
 
-.card_bg_first{
-    background-color: $color_bg_secondary;
+.card_bg_first {
+  background-color: $color_bg_secondary;
 }
 
-.card_bg_secondary{
-    background-color: $card_bg_second;
+.card_bg_secondary {
+  background-color: $card_bg_second;
 }
 
-.text_color_primary{
-    color:$text_color_primary;
+.text_color_primary {
+  color: $text_color_primary;
 }
 
-.rounded_box{
-    border-radius: $rounded_radius;
+.rounded_box {
+  border-radius: $rounded_radius;
 }
 
 .youTubeContainer {
-    width: 100%;
-    -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
-    -webkit-transform: rotate(0.000001deg);
-    -webkit-border-radius: $rounded_radius;
-    -moz-border-radius: $rounded_radius;
-    border-radius: $rounded_radius;
-    overflow: hidden;
-    display: inline-flex;
+  width: 100%;
+  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+  -webkit-transform: rotate(0.000001deg);
+  -webkit-border-radius: $rounded_radius;
+  -moz-border-radius: $rounded_radius;
+  border-radius: $rounded_radius;
+  overflow: hidden;
+  display: inline-flex;
 }
 
-.shadow_box{
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.35), 0px 0px 4px rgba(0, 0, 0, 0.25);
-    border-radius: $rounded_radius;
+.shadow_box {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.35), 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: $rounded_radius;
 }
-

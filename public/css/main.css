@@ -8,6 +8,19 @@
   border: none;
   background-color: transparent !important;
 }
+.carousel_card__instructur {
+  color: #040B4A;
+  padding: 0.25rem;
+}
+.carousel_card__instructur h5 {
+  font-weight: 600;
+}
+.carousel_card__instructur p, .carousel_card__instructur ul {
+  font-weight: 500;
+  text-align: left;
+  font-size: 12px !important;
+  margin-bottom: 0.25rem;
+}
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -62,8 +75,9 @@ body {
   color: #040B4A;
 }
 
-.margin__section {
+.margin__instructur {
   margin-top: 64px;
+  padding-bottom: 64px;
 }
 
 .background_second {
