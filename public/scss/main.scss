@@ -87,6 +87,31 @@ body {
   border-radius: $rounded_radius;
 }
 
+.why_sanggar{
+  padding-top: $m_48;
+  margin-bottom: $m_28;
+  color: $heading_alternative_color1;
+  img{
+    width: 5rem;
+    height: 5rem;
+    margin-top: $m_28;
+  }
+  .title{
+    font-weight:700;
+    font-size: $fs_24;
+  }
+  .desc{
+    font-size: $fs_14;
+    font-weight: 500;
+    color: black;
+  }
+  .caption{
+    margin-top: 0.5rem ;
+    font-size: $fs_16;
+    font-weight: 600;
+  }
+}
+
 .card_bg_first {
   background-color: $color_bg_secondary;
 }
