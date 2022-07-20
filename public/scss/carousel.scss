@@ -20,6 +20,24 @@
             font-size: 12px !important;
             margin-bottom: 0.25rem;
         }
-        // background-color: transparent !important;
+    }
+    &__testimony{
+        text-align: center;
+        color: $alternative_color2;
+        padding: 0.25rem;
+        h5{
+            font-weight: 600;
+        }
+        p{
+            font-weight: 500;
+            font-size: 12px !important;
+            margin-bottom: 0.25rem;
+        }
+    }
+}
+
+.carousel{
+    .card{
+        height:100%;
     }
 }

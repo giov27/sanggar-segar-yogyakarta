@@ -21,6 +21,23 @@
   font-size: 12px !important;
   margin-bottom: 0.25rem;
 }
+.carousel_card__testimony {
+  text-align: center;
+  color: #040B4A;
+  padding: 0.25rem;
+}
+.carousel_card__testimony h5 {
+  font-weight: 600;
+}
+.carousel_card__testimony p {
+  font-weight: 500;
+  font-size: 12px !important;
+  margin-bottom: 0.25rem;
+}
+
+.carousel .card {
+  height: 100%;
+}
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -90,11 +107,6 @@ body {
   background-color: #4C55A8;
 }
 
-.background_secondary {
-  margin: 28px 0;
-  background-color: #6673E3;
-}
-
 .background_free_class {
   background-color: #040B4A;
   padding: 0 0 1rem 0;
@@ -127,16 +139,86 @@ body {
   font-weight: 600;
 }
 
+.join_now {
+  padding: 48px 0;
+  background-color: #6673E3;
+  color: white;
+}
+.join_now .card_join {
+  background-color: rgba(58, 214, 171, 0.8);
+  border-radius: 8px;
+  margin-bottom: 64px;
+}
+.join_now .title, .join_now .title__start, .join_now .title__center {
+  font-size: 24px;
+  font-weight: 700;
+}
+.join_now .desc, .join_now .desc__center {
+  font-size: 14px;
+  font-weight: 500;
+}
+.join_now .button {
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #2A4461;
+  border-radius: 8px;
+  color: white;
+}
+
+.testimony {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  text-align: center;
+  color: #106CA3;
+}
+.testimony h5 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.testimony .carousel {
+  margin-bottom: 64px;
+}
+
+.wa_button {
+  background-color: #00E676;
+  padding: 0.75rem;
+  border-radius: 50%;
+  color: #FFFFFF;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+.wa_button a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.footer {
+  background-color: #F1F1F1;
+  padding: 28px inherit;
+}
+.footer img {
+  margin-bottom: 28px;
+}
+.footer h5 {
+  font-size: 14px;
+  color: #106CA3;
+  font-weight: 700;
+}
+.footer a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+
 .card_bg_first {
   background-color: #6673E3;
-}
-
-.card_bg_secondary {
-  background-color: rgba(58, 214, 171, 0.8);
-}
-
-.text_color_primary {
-  color: #106CA3;
 }
 
 .rounded_box {
