@@ -51,7 +51,14 @@
                 <!-- Swiper -->
                 <div class="swiper mySwiper py-4">
                   <div class="swiper-wrapper">
-                    <div class="swiper-slide ">
+                    <% facilites.forEach((facility)=>{ %>
+                      <div class="swiper-slide ">
+                        <img src="<%= facility.img %>" 
+                        class="" alt="<%= facility.altText %>">
+                        <h6><%= facility.description %></h6>
+                      </div>
+                        <% }) %>
+                    <!-- <div class="swiper-slide ">
                       <img src="/img/fasilitasBarbel.png" class="" alt="Fasilitas Barbel">
                       <h6 class="">Barbel</h6>
                     </div>
@@ -62,7 +69,7 @@
                     <div class="swiper-slide">
                       <img src="/img/fasilitasKelas.png" class="d-block w-100" alt="Fasilitas Kelas">
                       <h6 class="">Kelas</h6>
-                    </div>
+                    </div> -->
                   </div>
                   <div class="swiper-button-next"></div>
                   <div class="swiper-button-prev"></div>
@@ -477,7 +484,6 @@
       </div>
     </div>
     <%- include('../partials/footer') %>
-    <script src="/js/card-slider.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: "auto",
