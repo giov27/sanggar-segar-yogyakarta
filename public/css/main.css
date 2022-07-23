@@ -185,6 +185,7 @@ body {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 16px;
+  margin-top: 28px;
 }
 .testimony .carousel {
   margin-bottom: 64px;
@@ -318,6 +319,9 @@ body {
 }
 .swiper-slide h6 {
   margin: 0.25rem auto;
+}
+.swiper-slide ul {
+  padding-left: 1.5rem;
 }
 
 .swiper-button-next,
