@@ -291,6 +291,7 @@ body {
   text-align: center;
   font-size: 18px;
   background: #fff;
+  width: 70%;
   background-color: transparent;
   /* Center slide text vertically */
   display: -webkit-box;
