@@ -8,7 +8,7 @@ body {
 
 .title {
   font-size: $fs_24;
-  font-weight: bold;
+  font-weight: 700;
   &__start {
     @extend .title;
     margin-top: $m_28;
@@ -17,6 +17,10 @@ body {
     @extend .title;
     text-align: center;
     margin-top: $m_28;
+  }
+  &__sub {
+    font-weight: 700;
+    font-size: 16px;
   }
 }
 
@@ -27,6 +31,12 @@ body {
   &__center {
     @extend .desc;
     text-align: center;
+  }
+  &__italic{
+    font-style: italic;
+    font-size: $fs_16;
+    font-weight: 600;
+    color: $alternative_color2;
   }
 }
 
@@ -162,6 +172,37 @@ body {
   }
 }
 
+.headerTitle{
+  text-align: center;
+  font-size: $fs_24;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.about, .instructur, .membership{
+  padding-top: $m_48;
+  padding-bottom: $m_48;
+  text-align: center;
+  .title{
+    font-weight: 700;
+    font-size: 24px;
+    color: $alternative_color2;
+  }
+  .subTitle{
+    font-weight: 700;
+    font-size: 16px;
+    text-align: start;
+    color: $alternative_color2;
+  }
+  .button{
+    font-size: $fs_14;
+    font-weight: 600;
+    background-color: $support_color1;
+    border-radius: 8px;
+    color: white;
+  }
+}
+
 .footer{
   background-color: $support_color3;
   padding: $m_28 inherit;
@@ -207,4 +248,59 @@ body {
 .shadow_box {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.35), 0px 0px 4px rgba(0, 0, 0, 0.25);
   border-radius: $rounded_radius;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  background-color: transparent;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  
+  img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  h6{
+    margin: 0.25rem auto;
+  }
+}
+
+.swiper-button-next, 
+.swiper-button-prev{
+  --swiper-navigation-size:2rem;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, 
+.swiper-pagination-bullets.swiper-pagination-horizontal, 
+.swiper-pagination-custom, .swiper-pagination-fraction{
+  bottom: 5px;
+}
+
+.swiperTestimony{
+  .card{
+    min-width: 100%;
+  }
 }

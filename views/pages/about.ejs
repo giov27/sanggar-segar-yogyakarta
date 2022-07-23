@@ -9,33 +9,139 @@
 
 <body>
     <%- include('../partials/navbar') %>
-    <div class="container-fluid background_primary">
-        <div class="d-flex align-items-center justify-content-center" style="height: 30vh;">
-            <h1 class="my-auto text-white">Tentang Sanggar Segar</h1>
+    <header>
+        <%- include('../partials/header', {headerTitle: 'Tentang Sanggar Segar'}) %>
+    </header>
+    <div class="container about">
+        <h5 class="subTitle">Studio sanggar yang membantumu menjadi TOP 10% Talenta Indonesia dalam dunia Seni</h5>
+        <p class="desc">Pelajari keahlian dan rahasia untuk mewujudkan karir dan masa depan impianmu.</p>
+        <h4 class="title__center">Visi</h4>
+        <p class="desc">Mencetak tenaga kerja Profesional dibidang Instruktur / Pelatih Senam Aerobik sebagai pemandu kebugaran senam dimasyarakat secara legal.</p>
+        <p class="desc__italic"><i>“Mahir dalam Praktiknya dari Awam”</i></p>
+        <h4 class="title__center">Misi</h4>
+        <p class="desc">Mengerahkan dan mengembangkan para tenaga pemandu kebugaran senam dimasyarakat melalui Kursus Pelatih Senam sesuai aturan Standar Kompetensi Lulusan (Etika, Praktek secara nyata, dan Ilmu Pengetahuan Keolahragaan).</p>
+        <p class="desc__italic"><i>“Berbagi, Berproses, Berkesinambungan”</i></p>
+        <h4 class="title__center">Fasilitas Studio</h4>
+        <p class="desc">Mulai dari materi hingga studio dan matras. Sanggar Segar punya berbagai fasilitas yang lengkap untuk menemani aktivitasmu dalam memahami seni.</p>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card carousel_card__facility">
+                    <img src="/img/fasilitasBarbel.png" class="d-block w-100" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title">Barbel</h6>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card carousel_card__facility">
+                  <img src="/img/fasilitasMatras.png" class="d-block w-100" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Matras</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="card carousel_card__facility">
+                    <img src="/img/fasilitasKelas.png" class="d-block w-100" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Kelas</h5>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
         </div>
-    </div>
-    <div class="container">
-        <h4 class="text_color_dark">Studio sanggar yang membantumu menjadi TOP 10% Talenta Indonesia dalam dunia Seni</h4>
-        <p>Pelajari keahlian dan rahasia untuk mewujudkan karir dan masa depan impianmu.</p>
-        <div class="text-center">
-            <h3 class="text_color_dark">Visi</h3>
-            <p>Mencetak tenaga kerja Profesional dibidang Instruktur / Pelatih Senam Aerobik sebagai pemandu kebugaran senam dimasyarakat secara legal.</p>
-            <p class="text_color_dark"><i>“Mahir dalam Praktiknya dari Awam”</i></p>
-            <h3 class="text_color_dark">Misi</h3>
-            <p>Mengerahkan dan mengembangkan para tenaga pemandu kebugaran senam dimasyarakat melalui Kursus Pelatih Senam sesuai aturan Standar Kompetensi Lulusan (Etika, Praktek secara nyata, dan Ilmu Pengetahuan Keolahragaan).</p>
-            <p class="text_color_dark"><i>“Berbagi, Berproses, Berkesinambungan”</i></p>
-            <h3 class="text_color_dark">Fasilitas Studio</h3>
-            <p>Mulai dari materi hingga studio dan matras. Sanggar Segar punya berbagai fasilitas yang lengkap untuk menemani aktivitasmu dalam memahami seni.</p>
-            <h1>{{carousel and fasilitas}}</h1>
-            <h3 class="text_color_dark">Tim Sanggar Segar</h3>
-            <p>Mereka yang ahli dalam bidangnya dan siap untuk membimbing kamu dalam proses belajar seni di Sanggar Segar</p>
-            <h1>{{carousel INSTRUKTUR}}</h1>
-            <h3 class="text_color_dark">Media Partner</h3>
-            <h1>{{carousel Media Partner}}</h1>
-            <h3 class="text_color_dark">Lokasi Sanggar Segar</h3>
-            <p>Ingin tahu dimana lokasi sanggar segar?</p>
-            <h1>{{MAPS}}</h1>
+        <h4 class="title__center">Tim Sanggar Segar</h4>
+        <p class="desc">Mereka yang ahli dalam bidangnya dan siap untuk membimbing kamu dalam proses belajar seni di Sanggar Segar</p>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card">
+                  <img src="/img/profile-testimoni.svg" class="d-block w-25 mx-auto my-3" alt="Fasilitas Barbel">
+                  <div class="card-body text-center carousel_card__testimony">
+                    <h5 class="">Dra. Praptiningsih</h5>
+                    <p class="">Penguji UJK LSKSI<br>(Pengalaman 30 tahun)</p>
+                    <hr>
+                    <p>"Keren bangettt!"</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <img src="/img/profile-testimoni.svg" class="d-block w-25 mx-auto my-3" alt="Fasilitas Barbel">
+                  <div class="card-body text-center carousel_card__testimony">
+                    <h5 class=""> Praptiningsih</h5>
+                    <p class="">Penguji UJK LSKSI<br>(Pengalaman 30 tahun)</p>
+                    <hr>
+                    <p>"Keren bangettt!"</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <img src="/img/profile-testimoni.svg" class="d-block w-25 mx-auto my-3" alt="Fasilitas Barbel">
+                  <div class="card-body text-center carousel_card__testimony">
+                    <h5 class="">Dra.</h5>
+                    <p class="">Penguji UJK LSKSI<br>(Pengalaman 30 tahun)</p>
+                    <hr>
+                    <p>"Keren bangettt!"</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <h3 class="text_color_dark">Media Partner</h3>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row px-3">
+                  <div class="col-6">
+                    <img src="/img/Partner_FA_Segar.svg" class="d-block w-75" alt="Fasilitas Barbel">
+                  </div>
+                  <div class="col-6">
+                    <img src="/img/Partner_Sekar_Buana.svg" class="d-block w-75" alt="Fasilitas Barbel">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row px-3">
+                  <div class="col-6">
+                    <img src="/img/Partner_SS_Gayatri.svg" class="d-block w-75" alt="Fasilitas Barbel">
+                  </div>
+                  <div class="col-6">
+                    <img src="/img/Partner_Primaraga.svg" class="d-block w-75" alt="Fasilitas Barbel">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
         </div>
+        <h3 class="title__center">Lokasi Sanggar Segar</h3>
+        <p class="desc">Ingin tahu dimana lokasi sanggar segar?</p>
+        <h1>{{MAPS}}</h1>
     </div>
     <%- include('../partials/footer') %>
 </body>

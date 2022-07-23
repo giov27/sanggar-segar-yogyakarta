@@ -17,9 +17,20 @@ app.get('/', (req, res) => {
 });
 
 // about page
-app.get('/about', (req, res) => {
+app.get('/tentang', (req, res) => {
     res.render('pages/about');
 });
+
+// membership page
+app.get('/membership', (req, res) => {
+    res.render('pages/membership');
+});
+
+// instructur page
+app.get('/instruktur', (req, res) => {
+    res.render('pages/instructur');
+});
+
 
 app.listen(port, () => {
     console.log(`App listening at http://localhost:${port}`)

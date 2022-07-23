@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head') %>
+    <link rel="stylesheet" href="/css/main.css">
+    <title>About</title>
+</head>
+
+<body>
+    <%- include('../partials/navbar') %>
+    <header>
+        <%- include('../partials/header', {headerTitle: 'Instruktur Sanggar Segar'}) %>
+    </header>
+    <div class="container instructur">
+        <h5 class="title">Instruktur Pelatihan</h5>
+        <p class="desc">Sanggar Segar memiliki tim pelatih yang diisi oleh instruktur profesional yang unik dan spesialis dalam bidangnya masing-masing. Sanggar Segar menerima segala murid dengan berbagai macam latar belakang yang berbeda. 
+            Hal ini yang menjadikan Sanggar Segar dapat berkembang dan saling belajar.</p>
+        <div class="card">
+            <img src="/img/profile-testimoni.svg" class="d-block w-25 mx-auto my-3" alt="Fasilitas Barbel">
+            <div class="card-body text-center carousel_card__testimony">
+                <h5 class="">Dra. Praptiningsih</h5>
+                <p class="">Penguji UJK LSKSI<br>(Pengalaman 30 tahun)</p>
+                <hr>
+                <p>"Keren bangettt!"</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/img/profile-testimoni.svg" class="d-block w-25 mx-auto my-3" alt="Fasilitas Barbel">
+            <div class="card-body text-center carousel_card__testimony">
+                <h5 class="">Dra. Praptiningsih</h5>
+                <p class="">Penguji UJK LSKSI<br>(Pengalaman 30 tahun)</p>
+                <hr>
+                <p>"Keren bangettt!"</p>
+            </div>
+        </div>
+    </div>
+    <%- include('../partials/footer') %>
+</body>
+
+</html>
