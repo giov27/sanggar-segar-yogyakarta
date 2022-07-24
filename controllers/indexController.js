@@ -1,11 +1,15 @@
-const { headerTitles, facility, facilities } = require('./jsonData')
+const { headerTitles, facilities, classes, instructors, mediaPartners, testimonies } = require('./jsonData')
 
 exports.getHomepageView = (req, res) =>{
     // all variable
 
     // render
     return res.render('pages/index', {
-        facilites: facilities
+        facilites: facilities,
+        classes: classes,
+        instructors: instructors,
+        mediaPartners: mediaPartners,
+        testimonies: testimonies
     })
 }
 

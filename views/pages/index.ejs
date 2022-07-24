@@ -58,18 +58,6 @@
                         <h6><%= facility.description %></h6>
                       </div>
                         <% }) %>
-                    <!-- <div class="swiper-slide ">
-                      <img src="/img/fasilitasBarbel.png" class="" alt="Fasilitas Barbel">
-                      <h6 class="">Barbel</h6>
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="/img/fasilitasMatras.png" class="" alt="Fasilitas Matras">
-                      <h6 class="">Matras</h6>
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="/img/fasilitasKelas.png" class="d-block w-100" alt="Fasilitas Kelas">
-                      <h6 class="">Kelas</h6>
-                    </div> -->
                   </div>
                   <div class="swiper-button-next"></div>
                   <div class="swiper-button-prev"></div>
@@ -94,36 +82,18 @@
                         </button>
                       </h2>
                       <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        <div class="background_free_class">
-                          <img class="img-fluid" src="/img/kelas_senam1.png">
-                          <div class="container text-center text-white">
-                            <h4>Aerobic (Fun)</h4>
-                            <hr>
-                            <p>“Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.”</p>
-                            <a href="https://wa.me/6281239110189?text=Saya%20tertarik%20mendaftar%20kelas%20di%20sanggar%20segar.%20Boleh%20tanya-tanya%20dulu?" 
-                            class="btn btn-secondary" target="_blank">Lihat Selengkapnya</a>
-                          </div>
-                        </div>
-                        <div class="accordion-body p-0 pb-4 background_free_class my-2">
-                          <img class="img-fluid" src="/img/kelas_senam1.png">
-                          <div class="container text-center text-white">
-                            <h4>Aerobic (Fun)</h4>
-                            <hr>
-                            <p>“Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.”</p>
-                            <a href=https://wa.me/6281239110189?text=Saya%20tertarik%20mendaftar%20kelas%20di%20sanggar%20segar." target="_blank"
-                             class="btn btn-secondary">Lihat Selengkapnya</a>
-                          </div>
-                        </div>
-                        <div class="accordion-body p-0 pb-4 background_free_class my-2">
-                          <img class="img-fluid" src="/img/kelas_senam1.png">
-                          <div class="container text-center text-white">
-                            <h4>Aerobic (Fun)</h4>
-                            <hr>
-                            <p>“Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.”</p>
-                            <a href="https://wa.me/6281239110189?text=Saya%20tertarik%20mendaftar%20kelas%20di%20sanggar%20segar.%20Boleh%20tanya-tanya%20dulu?" 
-                            class="btn btn-secondary" target="_blank">Lihat Selengkapnya</a>
-                          </div>
-                        </div>
+                          <% classes.general.forEach(function(val){%>
+                            <div class="background_free_class">
+                              <img class="img-fluid" src="<%= val.img %>">
+                              <div class="container text-center text-white">
+                                <h4><%= val.className %></h4>
+                                <hr>
+                                <p><%= val.description %></p>
+                                <!-- <a href="https://wa.me/6281239110189?text=Saya%20tertarik%20mendaftar%20kelas%20di%20sanggar%20segar.%20Boleh%20tanya-tanya%20dulu?" 
+                                class="btn btn-secondary" target="_blank">Lihat Selengkapnya</a> -->
+                              </div>
+                            </div>
+                           <% }) %>
                       </div>
                     </div>
                     <div class="accordion-item mb-2 rounded_box">
@@ -133,36 +103,18 @@
                         </button>
                       </h2>
                       <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                        <div class="background_free_class">
-                          <img class="img-fluid" src="/img/kelas_senam1.png">
-                          <div class="container text-center text-white">
-                            <h4>Aerobic (Fun)</h4>
-                            <hr>
-                            <p>“Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.”</p>
-                            <a href="https://wa.me/6281239110189?text=Saya%20tertarik%20mendaftar%20kelas%20di%20sanggar%20segar.%20Boleh%20tanya-tanya%20dulu?" 
-                            class="btn btn-secondary" target="_blank">Lihat Selengkapnya</a>
+                        <% classes.level.forEach(function(val){%>
+                          <div class="background_free_class">
+                            <img class="img-fluid" src="<%= val.img %>">
+                            <div class="container text-center text-white">
+                              <h4><%= val.className %></h4>
+                              <hr>
+                              <p><%= val.description %></p>
+                              <!-- <a href="https://wa.me/6281239110189?text=Saya%20tertarik%20mendaftar%20kelas%20di%20sanggar%20segar.%20Boleh%20tanya-tanya%20dulu?" 
+                              class="btn btn-secondary" target="_blank">Lihat Selengkapnya</a> -->
+                            </div>
                           </div>
-                        </div>
-                        <div class="accordion-body p-0 pb-4 background_free_class my-2">
-                          <img class="img-fluid" src="/img/kelas_senam1.png">
-                          <div class="container text-center text-white">
-                            <h4>Aerobic (Fun)</h4>
-                            <hr>
-                            <p>“Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.”</p>
-                            <a href=https://wa.me/6281239110189?text=Saya%20tertarik%20mendaftar%20kelas%20di%20sanggar%20segar." target="_blank"
-                             class="btn btn-secondary">Lihat Selengkapnya</a>
-                          </div>
-                        </div>
-                        <div class="accordion-body p-0 pb-4 background_free_class my-2">
-                          <img class="img-fluid" src="/img/kelas_senam1.png">
-                          <div class="container text-center text-white">
-                            <h4>Aerobic (Fun)</h4>
-                            <hr>
-                            <p>“Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.”</p>
-                            <a href=https://wa.me/6281239110189?text=Saya%20tertarik%20mendaftar%20kelas%20di%20sanggar%20segar." target="_blank"
-                             class="btn btn-secondary">Lihat Selengkapnya</a>
-                          </div>
-                        </div>
+                         <% }) %>
                       </div>
                     </div>
                     <div class="accordion-item mb-2 rounded_box">
@@ -172,32 +124,68 @@
                         </button>
                       </h2>
                       <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                        <div class="background_free_class">
-                          <img class="img-fluid" src="/img/kelas_senam1.png">
-                          <div class="container text-center text-white">
-                            <h4>Aerobic (Fun)</h4>
-                            <hr>
-                            <p>“Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.”</p>
-                            <a href=https://wa.me/6281239110189?text=Saya%20tertarik%20mendaftar%20kelas%20di%20sanggar%20segar." target="_blank"
-                             class="btn btn-secondary">Lihat Selengkapnya</a>
+                        <% classes.banPer.forEach(function(val){%>
+                          <div class="background_free_class">
+                            <img class="img-fluid" src="<%= val.img %>">
+                            <div class="container text-center text-white">
+                              <h4><%= val.className %></h4>
+                              <hr>
+                              <p><%= val.description %></p>
+                              <!-- <a href="https://wa.me/6281239110189?text=Saya%20tertarik%20mendaftar%20kelas%20di%20sanggar%20segar.%20Boleh%20tanya-tanya%20dulu?" 
+                              class="btn btn-secondary" target="_blank">Lihat Selengkapnya</a> -->
+                            </div>
                           </div>
-                        </div>
-                        <div class="accordion-body p-0 pb-4 background_free_class my-2">
-                          <img class="img-fluid" src="/img/kelas_senam1.png">
-                          <div class="container text-center text-white">
-                            <h4>Aerobic (Fun)</h4>
-                            <hr>
-                            <p>“Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.”</p>
-                            <a href=https://wa.me/6281239110189?text=Saya%20tertarik%20mendaftar%20kelas%20di%20sanggar%20segar." target="_blank"
-                             class="btn btn-secondary">Lihat Selengkapnya</a>
+                         <% }) %>
+                      </div>
+                    </div>
+                    <div class="accordion-item mb-2 rounded_box">
+                      <h2 class="mb-0" id="headingFour">
+                        <button class="accordion-button bg-white rounded_box collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          Program Khusus
+                        </button>
+                      </h2>
+                      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <% classes.special.forEach(function(val){%>
+                          <div class="background_free_class">
+                            <img class="img-fluid" src="<%= val.img %>">
+                            <div class="container text-center text-white">
+                              <h4><%= val.className %></h4>
+                              <hr>
+                              <p><%= val.description %></p>
+                              <!-- <a href="https://wa.me/6281239110189?text=Saya%20tertarik%20mendaftar%20kelas%20di%20sanggar%20segar.%20Boleh%20tanya-tanya%20dulu?" 
+                              class="btn btn-secondary" target="_blank">Lihat Selengkapnya</a> -->
+                            </div>
                           </div>
-                        </div>
+                         <% }) %>
+                      </div>
+                    </div>
+                    <div class="accordion-item mb-2 rounded_box">
+                      <h2 class="mb-0" id="headingFive">
+                        <button class="accordion-button bg-white rounded_box collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                          Pelatihan Instruktur
+                        </button>
+                      </h2>
+                      <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                        <% classes.instructor.forEach(function(val){%>
+                          <div class="background_free_class">
+                            <img class="img-fluid" src="<%= val.img %>">
+                            <div class="container text-center text-white">
+                              <h4><%= val.className %></h4>
+                              <hr>
+                              <p><%= val.description %></p>
+                              <!-- <a href="https://wa.me/6281239110189?text=Saya%20tertarik%20mendaftar%20kelas%20di%20sanggar%20segar.%20Boleh%20tanya-tanya%20dulu?" 
+                              class="btn btn-secondary" target="_blank">Lihat Selengkapnya</a> -->
+                            </div>
+                          </div>
+                         <% }) %>
                       </div>
                     </div>
                 </div>
-                <!-- <div class="mt-2">
-                    <button class="btn btn-secondary fw-semibold">Lihat Semua Kelas</button>
-                </div> -->
+                <div class="mt-2">
+                    <a class="btn btn-secondary fw-semibold"
+                    href="https://wa.me/6281239110189?text=Saya%20tertarik%20mendaftar%20kelas%20di%20sanggar%20segar.%20Boleh%20tanya-tanya%20dulu?" 
+                    >Daftar Kelas Sekarang</a>
+                </div>
             </div>
             <!-- Instruktur Pelatihan -->
             <div class="margin__instructur text-center text-white">
@@ -207,161 +195,26 @@
                   membimbing kamu dalam proses belajar seni di Sanggar Segar
                 </p>
                 <div class="swiper swiperInstructur">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="card border-0">
-                        <img src="/img/instruktur_praptiningsih.svg" class="" alt="Fasilitas Barbel">
-                        <div class="card-body carousel_card__instructur">
-                          <h5 class="accordion-button ">Dra. Praptiningsih</h5>
-                          <p class="">Penguji UJK LSKSI<br>(Pengalaman 30 tahun)</p>
-                          <ul>
-                            <li>Marlupi Ballet
-                            <li>Sanggar Senam Kartika Dewi</li>
-                            <li>Sanggar Senam Hanna</li>
-                            <li>Sanggar Senam Noni Kusuma</li>
-                            <li>Merapi View</li>
-                            <li>LKP Segar</li>
-                          </ul>
+                  <div class="swiper-wrapper pb-4">
+                    <% instructors.forEach((instructor)=>{%>
+                      <div class="swiper-slide align-items-stretch align-content-stretch flex-grow-1">
+                        <div class="card border-0">
+                          <img src="<%= instructor.img %>" class="" alt="">
+                          <div class="card-body carousel_card__instructur">
+                            <h5 class="accordion-button "><%= instructor.trainerName %></h5>
+                            <p class=""><%= instructor.trainerTitle %><br><%= instructor.trainerExp %></p>
+                            <ul>
+                              <% instructor.trainerCourses.forEach((course)=>{%>
+                                <li><%= course %></li>
+                              <%}) %>
+                            </ul>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="swiper-slide ">
-                      <div class="card border-0">
-                        <img src="/img/instruktur_apri.png" class="d-block w-100" alt="Fasilitas Barbel">
-                        <div class="carousel_card__instructur">
-                          <h5 class="accordion-button ">Dra. Praptiningsih</h5>
-                          <p class="">Penguji UJK LSKSI<br>(Pengalaman 30 tahun)</p>
-                          <ul>
-                            <li>BPR Bantul</li>
-                            <li>Sanggar Senam Puspita</li>
-                            <li>LKP Segar</li>
-                            <li class="text-white">BPR Bantul</li>
-                            <li class="text-white">Sanggar Senam Puspita</li>
-                            <li class="text-white">LKP Segar</li>
-                            <li class="text-white">LKP Segar</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="card border-0">
-                        <img src="/img/instruktur_apri.png" class="d-block w-100" alt="Fasilitas Barbel">
-                        <div class="card-body carousel_card__instructur">
-                          <h5 class="accordion-button ">Dra. Praptiningsih</h5>
-                          <p class="">Penguji UJK LSKSI<br>(Pengalaman 30 tahun)</p>
-                          <ul>
-                            <li>BPR Bantul</li>
-                            <li>Sanggar Senam Puspita</li>
-                            <li>LKP Segar</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="card border-0">
-                        <img src="/img/instruktur_atik.svg" class="d-block w-100" alt="Fasilitas Barbel">
-                        <div class="card-body carousel_card__instructur">
-                          <h5 class="accordion-button ">Dra. Praptiningsih</h5>
-                          <p class="">Penguji UJK LSKSI<br>(Pengalaman 30 tahun)</p>
-                          <ul>
-                            <li>Marlupi Ballet
-                            <li>Sanggar Senam Kartika Dewi</li>
-                            <li>Sanggar Senam Hanna</li>
-                            <li>Sanggar Senam Noni Kusuma</li>
-                            <li>Merapi View</li>
-                            <li>LKP Segar</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
+                    <%}) %>
                   </div>
-                  <div class="swiper-button-next"></div>
-                  <div class="swiper-button-prev"></div>
                   <div class="swiper-pagination"></div>
                 </div>
-
-                <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <div class="row">
-                        <div class="col-6">
-                          <div class="card">
-                            <img src="/img/instruktur_praptiningsih.svg" class="d-block w-100" alt="Fasilitas Barbel">
-                            <div class="card-body carousel_card__instructur">
-                              <h5 class="accordion-button ">Dra. Praptiningsih</h5>
-                              <p class="">Penguji UJK LSKSI<br>(Pengalaman 30 tahun)</p>
-                              <ul>
-                                <li>Marlupi Ballet
-                                <li>Sanggar Senam Kartika Dewi</li>
-                                <li>Sanggar Senam Hanna</li>
-                                <li>Sanggar Senam Noni Kusuma</li>
-                                <li>Merapi View</li>
-                                <li>LKP Segar</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-6">
-                          <div class="card">
-                            <img src="/img/instruktur_apri.png" class="d-block w-100" alt="Fasilitas Barbel">
-                            <div class="card-body carousel_card__instructur">
-                              <h5 class="accordion-button ">Dra. Praptiningsih</h5>
-                              <p class="">Penguji UJK LSKSI<br>(Pengalaman 30 tahun)</p>
-                              <ul>
-                                <li>BPR Bantul</li>
-                                <li>Sanggar Senam Puspita</li>
-                                <li>LKP Segar</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <div class="row">
-                        <div class="col-6">
-                          <div class="card">
-                            <img src="/img/instruktur_atik.svg" class="d-block w-100" alt="Fasilitas Barbel">
-                            <div class="card-body carousel_card__instructur">
-                              <h5 class="accordion-button ">Dra. Praptiningsih</h5>
-                              <p class="">Penguji UJK LSKSI<br>(Pengalaman 30 tahun)</p>
-                              <ul>
-                                <li>Marlupi Ballet
-                                <li>Sanggar Senam Kartika Dewi</li>
-                                <li>Sanggar Senam Hanna</li>
-                                <li>Sanggar Senam Noni Kusuma</li>
-                                <li>Merapi View</li>
-                                <li>LKP Segar</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-6">
-                          <div class="card">
-                            <img src="/img/instruktur_slamet.png" class="d-block w-100" alt="Fasilitas Barbel">
-                            <div class="card-body carousel_card__instructur">
-                              <h5 class="accordion-button ">Dra. Praptiningsih</h5>
-                              <p class="">Penguji UJK LSKSI<br>(Pengalaman 30 tahun)</p>
-                              <ul>
-                                <li>BPR Bantul</li>
-                                <li>Sanggar Senam Puspita</li>
-                                <li>LKP Segar</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-              </div> -->
             </div>
         </div>
     </div>
@@ -372,21 +225,21 @@
           dalam memahami seni tari baik untuk kebutuhan profesional
           maupun kebutuhan kebugaran.
         </p>
-        <img src="/img/Learning-60px.svg">
+        <img src="/img/icon/Learning-60px.svg">
         <h6 class="caption">Dibimbing dari Awam</h6>
         <p class="desc">
           Pemahamanmu masih sedikit? Atau mungkin belum penah
           sama sekali untuk menari? Tenang!!! kamu akan dibimbing 
           oleh instruktur terlatih dan profesional yang sudah berpengalaman dalam bidangnya hingga mahir dalam praktiknya.
         </p>
-        <img src="/img/Expert-60px.svg">
+        <img src="/img/icon/Expert-60px.svg">
         <h6 class="caption">Belajar dari Ahlinya</h6>
         <p class="desc">
           Tenaga ahli instuktur profesional di Sanggar Segar memiliki pengalaman 
           lebih dari 10 tahun dalam membimbing talenta agar bisa cepat mahir dalam 
           seni yang sesuai dengan pilihanmu. 
         </p>
-        <img src="/img/Partner-60px.svg">
+        <img src="/img/icon/Partner-60px.svg">
         <h6 class="caption">Jadi Partner Sanggar Segar</h6>
         <p class="desc">
           Lulus dari Sanggar Segar, tapi bingung habis itu mau ngapain? Tenang!!! 
@@ -412,39 +265,19 @@
         </p>
         <div class="swiper swiperTestimony py-4" >
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="card">
-                <img src="/img/profile-testimoni.svg" class="d-block w-25 mx-auto my-3" alt="Fasilitas Barbel">
-                <div class="card-body text-center carousel_card__testimony">
-                  <h5 class="">Dra. Praptiningsih</h5>
-                  <p class="">Penguji UJK LSKSI<br>(Pengalaman 30 tahun)</p>
-                  <hr>
-                  <p>"Keren bangettt!"</p>
+            <% testimonies.forEach((testimony)=>{%>
+              <div class="swiper-slide">
+                <div class="card">
+                  <img src="<%= testimony.img %>" class="d-block w-25 mx-auto my-3" alt="<%= testimony.alt %>">
+                  <div class="card-body text-center carousel_card__testimony">
+                    <h5><%= testimony.testimonyName %></h5>
+                    <p><%= testimony.testimonyJob %></p>
+                    <hr>
+                    <p><%= testimony.desc %></p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <img src="/img/profile-testimoni.svg" class="d-block w-25 mx-auto my-3" alt="Fasilitas Barbel">
-                <div class="card-body text-center carousel_card__testimony">
-                  <h5 class="">Dra. Praptiningsih</h5>
-                  <p class="">Penguji UJK LSKSI<br>(Pengalaman 30 tahun)</p>
-                  <hr>
-                  <p>"Keren bangettt!"</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <img src="/img/profile-testimoni.svg" class="d-block w-25 mx-auto my-3" alt="Fasilitas Barbel">
-                <div class="card-body text-center carousel_card__testimony">
-                  <h5 class="">Dra. Praptiningsih</h5>
-                  <p class="">Penguji UJK LSKSI<br>(Pengalaman 30 tahun)</p>
-                  <hr>
-                  <p>"Keren bangettt!"</p>
-                </div>
-              </div>
-            </div>
+            <%})%>
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
@@ -456,18 +289,11 @@
       <h5>Media Partner</h5>
       <div class="swiper swiperPartner py-4" >
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="/img/Partner_FA_Segar.svg" class="d-block w-75" alt="Fasilitas Barbel">
-          </div>
-          <div class="swiper-slide">
-            <img src="/img/Partner_Sekar_Buana.svg" class="d-block w-75" alt="Fasilitas Barbel">
-          </div>
-          <div class="swiper-slide">
-            <img src="/img/Partner_SS_Gayatri.svg" class="d-block w-75" alt="Fasilitas Barbel">
-          </div>
-          <div class="swiper-slide">
-            <img src="/img/Partner_SS_Primaraga.svg" class="d-block w-75" alt="Fasilitas Barbel">
-          </div>
+          <% mediaPartners.forEach((partner)=>{ %>
+            <div class="swiper-slide">
+              <img src="<%= partner.img %>" class="d-block w-75" alt="<%= partner.alt %>">
+            </div>
+          <% }) %>
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
@@ -510,9 +336,9 @@
           el: ".swiper-pagination",
           clickable: true
         },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
         },
       });
       var swiper2 = new Swiper(".swiperTestimony", {
@@ -526,6 +352,10 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
       });
       var swiper3 = new Swiper(".swiperPartner", {
         slidesPerView: 3,
@@ -537,6 +367,10 @@
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
         },
       });
     </script>
