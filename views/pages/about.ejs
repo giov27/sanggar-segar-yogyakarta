@@ -3,8 +3,6 @@
 
 <head>
     <%- include('../partials/head') %>
-    <link rel="stylesheet" href="/css/main.css">
-    <title>About</title>
 </head>
 
 <body>
@@ -23,41 +21,19 @@
         <p class="desc__italic"><i>“Berbagi, Berproses, Berkesinambungan”</i></p>
         <h4 class="title__center">Fasilitas Studio</h4>
         <p class="desc">Mulai dari materi hingga studio dan matras. Sanggar Segar punya berbagai fasilitas yang lengkap untuk menemani aktivitasmu dalam memahami seni.</p>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="card carousel_card__facility">
-                    <img src="/img/fasilitasBarbel.png" class="d-block w-100" alt="...">
-                    <div class="card-body">
-                        <h6 class="card-title">Barbel</h6>
-                    </div>
-                </div>
+        <div class="swiper mySwiper py-4">
+          <div class="swiper-wrapper">
+            <% facilites.forEach((facility)=>{ %>
+              <div class="swiper-slide ">
+                <img src="<%= facility.img %>" 
+                class="" alt="<%= facility.altText %>">
+                <h6><%= facility.description %></h6>
               </div>
-              <div class="carousel-item">
-                <div class="card carousel_card__facility">
-                  <img src="/img/fasilitasMatras.png" class="d-block w-100" alt="...">
-                  <div class="card-body">
-                      <h5 class="card-title">Matras</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                  <div class="card carousel_card__facility">
-                    <img src="/img/fasilitasKelas.png" class="d-block w-100" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Kelas</h5>
-                    </div>
-                  </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <% }) %>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
         <h4 class="title__center">Tim Sanggar Segar</h4>
         <p class="desc">Mereka yang ahli dalam bidangnya dan siap untuk membimbing kamu dalam proses belajar seni di Sanggar Segar</p>
@@ -106,44 +82,25 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-        <h3 class="text_color_dark">Media Partner</h3>
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="row px-3">
-                  <div class="col-6">
-                    <img src="/img/Partner_FA_Segar.svg" class="d-block w-75" alt="Fasilitas Barbel">
-                  </div>
-                  <div class="col-6">
-                    <img src="/img/Partner_Sekar_Buana.svg" class="d-block w-75" alt="Fasilitas Barbel">
-                  </div>
-                </div>
+        <h3 class="title__center">Media Partner</h3>
+        <div class="swiper swiperPartner py-4" >
+          <div class="swiper-wrapper">
+            <% mediaPartners.forEach((partner)=>{ %>
+              <div class="swiper-slide">
+                <img src="<%= partner.img %>" class="d-block w-75" alt="<%= partner.alt %>">
               </div>
-              <div class="carousel-item">
-                <div class="row px-3">
-                  <div class="col-6">
-                    <img src="/img/Partner_SS_Gayatri.svg" class="d-block w-75" alt="Fasilitas Barbel">
-                  </div>
-                  <div class="col-6">
-                    <img src="/img/Partner_Primaraga.svg" class="d-block w-75" alt="Fasilitas Barbel">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <% }) %>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
         <h3 class="title__center">Lokasi Sanggar Segar</h3>
         <p class="desc">Ingin tahu dimana lokasi sanggar segar?</p>
         <h1>{{MAPS}}</h1>
     </div>
     <%- include('../partials/footer') %>
+    <script src="/js/swiperConf.js"></script>
 </body>
 
 </html>

@@ -295,6 +295,7 @@ body {
   background: #fff;
   width: 70%;
   background-color: transparent;
+  border-radius: 8px;
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -337,6 +338,11 @@ body {
 
 .swiperTestimony .card {
   min-width: 100%;
+}
+
+.swiper-instructur-card {
+  background: #FFFFFF;
+  min-height: 25rem;
 }
 
 /*# sourceMappingURL=main.css.map */

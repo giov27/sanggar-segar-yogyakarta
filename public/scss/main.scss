@@ -263,7 +263,7 @@ body {
   background: #fff;
   width:70%;
   background-color: transparent;
-
+  border-radius: $rounded_radius;
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -309,4 +309,9 @@ body {
   .card{
     min-width: 100%;
   }
+}
+
+.swiper-instructur-card{
+  background: #FFFFFF;
+  min-height: 25rem;
 }

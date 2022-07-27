@@ -3,7 +3,6 @@
 
 <head>
     <%- include('../partials/head') %>
-    <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body>
@@ -15,24 +14,22 @@
         <h5 class="title">Instruktur Pelatihan</h5>
         <p class="desc">Sanggar Segar memiliki tim pelatih yang diisi oleh instruktur profesional yang unik dan spesialis dalam bidangnya masing-masing. Sanggar Segar menerima segala murid dengan berbagai macam latar belakang yang berbeda. 
             Hal ini yang menjadikan Sanggar Segar dapat berkembang dan saling belajar.</p>
-        <div class="card">
-            <img src="/img/profile-testimoni.svg" class="d-block w-25 mx-auto my-3" alt="Fasilitas Barbel">
-            <div class="card-body text-center carousel_card__testimony">
-                <h5 class="">Dra. Praptiningsih</h5>
-                <p class="">Penguji UJK LSKSI<br>(Pengalaman 30 tahun)</p>
-                <hr>
-                <p>"Keren bangettt!"</p>
+        <% instructors.forEach((instructor)=>{ %>
+            <div class="card my-3">
+                <img src="<%= instructor.img %>" class="d-block w-25 mx-auto my-3 rounded-circle">
+                <div class="card-body text-center carousel_card__testimony">
+                    <h5><%= instructor.trainerName %></h5>
+                    <p><%= instructor.trainerTitle %></p>
+                    <hr>
+                    <p><%= instructor.trainerExpDesc %></p>
+                    <ul class="text-start">
+                        <% instructor.trainerCourses.forEach((course)=>{ %>
+                            <li><p><%= course %></p></li>
+                        <%}) %>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <img src="/img/profile-testimoni.svg" class="d-block w-25 mx-auto my-3" alt="Fasilitas Barbel">
-            <div class="card-body text-center carousel_card__testimony">
-                <h5 class="">Dra. Praptiningsih</h5>
-                <p class="">Penguji UJK LSKSI<br>(Pengalaman 30 tahun)</p>
-                <hr>
-                <p>"Keren bangettt!"</p>
-            </div>
-        </div>
+        <%}) %>
     </div>
     <%- include('../partials/footer') %>
 </body>

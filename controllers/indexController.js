@@ -16,14 +16,17 @@ exports.getHomepageView = (req, res) =>{
 exports.getInstructorView = (req, res) =>{
 
     return res.render('pages/instructor', {
-        headerTitle: headerTitles.instructor
+        headerTitle: headerTitles.instructor,
+        instructors: instructors
     })
 }
 
 exports.getAboutView = (req, res) =>{
 
     return res.render('pages/about', {
-        headerTitle: headerTitles.about
+        headerTitle: headerTitles.about,
+        facilites: facilities,
+        mediaPartners: mediaPartners
     })
 }
 

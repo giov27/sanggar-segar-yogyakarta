@@ -27,6 +27,7 @@ module.exports = {
       trainerName: "Dra. Praptiningsih",
       trainerTitle: "Penguji UJK LSKSI",
       trainerExp: "(Pengalaman 30 Tahun)",
+      trainerExpDesc: "Dra. Praptiningsih memiliki pengalaman sebagai instruktur pelatihan selama <b>30 tahun</b>, yang tersebar di,",
       trainerCourses: [
         "Marlupi Ballet", "Sanggar Senam Kartika Dewi", "Sanggar Senam Hanna",
         "Sanggar Senam Noni Kusuma", "Merapi View", "LKP Segar"
@@ -37,6 +38,7 @@ module.exports = {
       trainerName: "Apri Astuti",
       trainerTitle: "Senam Level III",
       trainerExp: "(Pengalaman 15 Tahun)",
+      trainerExpDesc: "Apri Astuti memiliki pengalaman sebagai instruktur pelatihan selama <b>15 tahun</b> yang tersebar di,",
       trainerCourses: [
         "BPR Bantul", "Sanggar Senam Puspita", "LKP Segar"
       ]
@@ -46,6 +48,7 @@ module.exports = {
       trainerName: "Apri Astuti",
       trainerTitle: "Senam Level III",
       trainerExp: "(Pengalaman 15 Tahun)",
+      trainerExpDesc: "Atik Maryani memiliki pengalaman sebagai instruktur pelatihan selama <b>15 tahun</b> yang tersebar di,",
       trainerCourses: [
       ]
     }
