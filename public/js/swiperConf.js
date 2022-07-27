@@ -23,10 +23,10 @@ var swiper1 = new Swiper(".swiperInstructur", {
       el: ".swiper-pagination",
       clickable: true
     },
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
 });
 var swiper2 = new Swiper(".swiperTestimony", {
     // slidesPerView: 1,

@@ -182,10 +182,11 @@ body {
 }
 
 .about, .instructur, .membership{
-  padding-top: $m_48;
+  padding-top: $m_28;
   padding-bottom: $m_48;
   text-align: center;
   .title{
+    margin-top: $m_28;
     font-weight: 700;
     font-size: 24px;
     color: $alternative_color2;
@@ -314,4 +315,22 @@ body {
 .swiper-instructur-card{
   background: #FFFFFF;
   min-height: 25rem;
+}
+
+.navbar{
+  a{
+    color: $alternative_color2;
+    opacity: 1;
+    font-size: 14px;
+    font-weight: 800;
+  } 
+  a:hover{
+    opacity: 0.8;
+    transform: scale(1.3);
+  }
+}
+
+.bi-arrow-down{
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
