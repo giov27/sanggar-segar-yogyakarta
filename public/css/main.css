@@ -362,4 +362,9 @@ body {
   margin-bottom: 20px;
 }
 
+.bi-geo-alt-fill, .location-icon {
+  width: 33px;
+  height: 33px;
+}
+
 /*# sourceMappingURL=main.css.map */
