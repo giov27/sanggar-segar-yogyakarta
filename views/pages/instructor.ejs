@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <%- include('../partials/head') %>
-</head>
+  </head>
 
-<body>
+  <body>
     <%- include('../partials/navbar') %>
     <header>
-        <%- include('../partials/header', {headerTitle}) %>
+      <%- include('../partials/header', {headerTitle}) %>
     </header>
     <div class="container instructur">
-        <h5 class="title">Instruktur Pelatihan</h5>
-        <p class="desc">Sanggar Segar memiliki tim pelatih yang diisi oleh instruktur profesional yang unik dan spesialis dalam bidangnya masing-masing. Sanggar Segar menerima segala murid dengan berbagai macam latar belakang yang berbeda. 
-            Hal ini yang menjadikan Sanggar Segar dapat berkembang dan saling belajar.</p>
-        <% instructors.forEach((instructor)=>{ %>
-            <div class="card my-3">
-                <img src="<%= instructor.img %>" class="d-block w-25 mx-auto my-3 rounded-circle">
-                <div class="card-body text-center carousel_card__testimony">
-                    <h5><%= instructor.trainerName %></h5>
-                    <p><%= instructor.trainerTitle %></p>
-                    <hr>
-                    <p><%= instructor.trainerExpDesc %></p>
-                    <ul class="text-start">
-                        <% instructor.trainerCourses.forEach((course)=>{ %>
-                            <li><p><%= course %></p></li>
-                        <%}) %>
-                    </ul>
-                </div>
-            </div>
-        <%}) %>
+      <h5 class="title">Instruktur Pelatihan</h5>
+      <p class="desc">
+        Studio Segar memiliki tim pelatih yang diisi oleh instruktur
+        profesional yang unik dan spesialis dalam bidangnya
+        masing-masing. Studio Segar menerima segala murid dengan
+        berbagai macam latar belakang yang berbeda. Hal ini yang
+        menjadikan Studio Segar dapat berkembang dan saling belajar.
+      </p>
+      <% instructors.forEach((instructor)=>{ %>
+      <div class="card my-3 p-3">
+        <img
+          src="<%= instructor.img %>"
+          class="d-block w-25 mx-auto my-1 rounded-circle"
+        />
+        <div class="card-body text-center carousel_card__testimony">
+          <h5><%= instructor.trainerName %></h5>
+          <p><%= instructor.trainerTitle %></p>
+          <hr />
+          <p><%= instructor.trainerExpDesc %></p>
+          <ul class="text-start">
+            <% instructor.trainerCourses.forEach((course)=>{ %>
+            <li><p><%= course %></p></li>
+            <%}) %>
+          </ul>
+        </div>
+      </div>
+      <%}) %>
     </div>
     <%- include('../partials/footer') %>
-</body>
-
+  </body>
 </html>

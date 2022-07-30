@@ -1,9 +1,18 @@
 // Utilities
-@import "variables";
-@import "carousel";
+@import 'variables';
+@import 'carousel';
 
 body {
   font-family: $font_1;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  box-shadow: 0 0 11px #040b4a7c;
+}
+
+.padding_header {
+  padding-top: 4rem !important;
 }
 
 .title {
@@ -32,7 +41,7 @@ body {
     @extend .desc;
     text-align: center;
   }
-  &__italic{
+  &__italic {
     font-style: italic;
     font-size: $fs_16;
     font-weight: 600;
@@ -80,38 +89,48 @@ body {
   background-color: $support_color2;
 }
 
+.button_ain_text_color2 {
+  background-color: $ain_text_color2;
+  color: #ffffff;
+  padding: 0.5rem 2.2rem;
+  margin-top: 1rem;
+}
+
 .background_primary {
   padding: $m_16 0;
   background-color: $color_bg_primary;
+  .top_video {
+    padding-top: 5rem;
+  }
 }
 
 .background_free_class {
   background-color: $text_color_dark;
   padding: 0 0 1rem 0;
-  margin: 0.25rem;
+  margin: 0.5rem;
   border-radius: $rounded_radius;
 }
 
-.why_sanggar{
+.why_sanggar {
   padding-top: $m_48;
   margin-bottom: $m_28;
   color: $heading_alternative_color1;
-  img{
+  img {
     width: 5rem;
     height: 5rem;
     margin-top: $m_28;
   }
-  .title{
-    font-weight:700;
+  .title {
+    font-weight: 700;
     font-size: $fs_24;
   }
-  .desc{
+  .desc {
     font-size: $fs_14;
     font-weight: 500;
     color: black;
   }
-  .caption{
-    margin-top: 0.5rem ;
+  .caption {
+    margin-top: 0.5rem;
     font-size: $fs_16;
     font-weight: 600;
   }
@@ -126,78 +145,82 @@ body {
     border-radius: 8px;
     margin-bottom: $m_64;
   }
-  .title{
+  .title {
     font-size: $fs_24;
     font-weight: 700;
   }
-  .desc{
+  .desc {
     font-size: $fs_14;
     font-weight: 500;
   }
-  .button{
+  .button {
     font-size: $fs_14;
     font-weight: 600;
     background-color: $support_color1;
     border-radius: 8px;
+    padding: 0.5rem 3.5rem;
     color: white;
   }
 }
 
-.testimony{
-  padding-top: $m_48;
+.testimony {
+  // padding-top: $m_48;
   padding-bottom: $m_48;
   text-align: center;
   color: $support_color2;
-  h5{
+  h5 {
     font-size: $fs_24;
     font-weight: 700;
     margin-bottom: $m_16;
-    margin-top: $m_28;
+    margin-top: $m_16;
+    padding-top: $m_48;
   }
-  .carousel{
+  .carousel {
     margin-bottom: $m_64;
   }
 }
 
-.wa_button{
-  background-color: #00E676;
-  padding:0.75rem;
+.wa_button {
+  background-color: #00e676;
+  padding: 0.75rem;
   border-radius: 50%;
-  color: #FFFFFF;
+  color: #ffffff;
   position: fixed;
   bottom: 10px;
   right: 10px;
   z-index: 10;
-  a{
+  a {
     text-decoration: none;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 }
 
-.headerTitle{
+.headerTitle {
   text-align: center;
   font-size: $fs_24;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.about, .instructur, .membership{
+.about,
+.instructur,
+.membership {
   padding-top: $m_28;
   padding-bottom: $m_48;
   text-align: center;
-  .title{
+  .title {
     margin-top: $m_28;
     font-weight: 700;
     font-size: 24px;
     color: $alternative_color2;
   }
-  .subTitle{
+  .subTitle {
     font-weight: 700;
     font-size: 16px;
     text-align: start;
     color: $alternative_color2;
   }
-  .button{
+  .button {
     font-size: $fs_14;
     font-weight: 600;
     background-color: $support_color1;
@@ -206,26 +229,26 @@ body {
   }
 }
 
-.footer{
+.footer {
   background-color: $support_color3;
   padding: $m_28 inherit;
-  img{
+  img {
     margin-bottom: $m_28;
   }
-  h5{
+  h5 {
     font-size: 14px;
     color: $support_color2;
     font-weight: 700;
   }
-  a{
+  a {
     color: #000000;
     text-decoration: none;
     font-size: 12px;
     font-weight: 500;
     margin-bottom: 12px;
   }
-  a:hover{
-    text-decoration:underline ;
+  a:hover {
+    text-decoration: underline;
   }
 }
 
@@ -239,7 +262,11 @@ body {
 
 .youTubeContainer {
   width: 100%;
-  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+  -webkit-mask-image: -webkit-radial-gradient(
+    circle,
+    white 100%,
+    black 100%
+  );
   -webkit-transform: rotate(0.000001deg);
   -webkit-border-radius: $rounded_radius;
   -moz-border-radius: $rounded_radius;
@@ -249,7 +276,8 @@ body {
 }
 
 .shadow_box {
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.35), 0px 0px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.35),
+    0px 0px 4px rgba(0, 0, 0, 0.25);
   border-radius: $rounded_radius;
 }
 
@@ -262,7 +290,7 @@ body {
   text-align: center;
   font-size: 18px;
   background: #fff;
-  width:70%;
+  width: 70%;
   background-color: transparent;
   border-radius: $rounded_radius;
   /* Center slide text vertically */
@@ -280,62 +308,80 @@ body {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  
-  img{
+
+  img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  h6{
+  h6 {
     margin: 0.25rem auto;
   }
-  ul{
+  ul {
     padding-left: 1.5rem;
   }
 }
 
-.swiper-button-next, 
-.swiper-button-prev{
-  --swiper-navigation-size:2rem;
+.swiper-button-next,
+.swiper-button-prev {
+  --swiper-navigation-size: 2rem;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets, 
-.swiper-pagination-bullets.swiper-pagination-horizontal, 
-.swiper-pagination-custom, .swiper-pagination-fraction{
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
   bottom: 5px;
 }
 
-.swiperTestimony{
-  .card{
+.swiperTestimony {
+  .card {
     min-width: 100%;
   }
 }
 
-.swiper-instructur-card{
-  background: #FFFFFF;
-  min-height: 25rem;
+.swiper-instructur-card {
+  background: #ffffff;
+  min-height: 27rem;
+  -webkit-box-shadow: 0 0 11px #040b4a7c;
+  box-shadow: 0 0 11px #040b4a7c;
 }
 
-.navbar{
-  a{
+.navbar {
+  a {
     color: $alternative_color2;
     opacity: 1;
     font-size: 14px;
     font-weight: 800;
-  } 
-  a:hover{
+  }
+  a:hover {
     opacity: 0.8;
     transform: scale(1.3);
   }
 }
 
-.bi-arrow-down{
+.bi-arrow-down {
   font-size: 2rem;
   margin-bottom: 20px;
 }
 
-.bi-geo-alt-fill, .location-icon{
+.bi-geo-alt-fill,
+.location-icon {
   width: 33px;
   height: 33px;
+}
+
+.google-maps {
+  position: relative;
+  padding-bottom: 75%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+}
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
 }

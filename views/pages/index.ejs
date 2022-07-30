@@ -8,9 +8,9 @@
 <body>
     <%- include('../partials/navbar') %>
     <div class="background_primary">
-        <div class="container pt-5">
+        <div class="container top_video">
             <div class="shadow_box">
-                <div class="ratio ratio-21x9  py-5 youTubeContainer">
+                <div class="ratio ratio-21x9  py-4 youTubeContainer">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/BQeZXmRgbCA?controls=0" 
                     title="Video 1 LKP Segar" frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -18,10 +18,9 @@
                 </div>
             </div>
             <div class="text-white container">
-                <h1 class="title__start">Belajar Seni yang Bugar Gabungnya di Sanggar Segar</h1>
+                <h1 class="title__start">Belajar Seni yang Bugar Gabungnya di Studio Segar</h1>
                 <p class="desc">Instruktur pelatihan terbaik dan berpengalaman akan ngajarin kamu sampai 
-                    benar-benar memahami dan mendapat keahlian dari program seni yang diikuti 
-                    untuk pilihan terbaik dari masa depan kamu.
+                    benar-benar paham dan ahli untuk program kebugaran yang sedang kamu ikuti.
                 </p>
                 <div class="card_box row align-items-center">
                     <div class="col-5">
@@ -29,7 +28,7 @@
                         target="_blank" class="btn card_box__text_button col-12">Daftar Kelas</a>
                     </div>
                     <div class="col-7">
-                        <p class="card_box__text mb-0">Daftarkan keanggotaanmu untuk mendapatkan diskon & paket spesial</p>
+                        <p class="card_box__text mb-0">Daftarkan dirimu segera untuk dapat diskon & paket spesial</p>
                     </div>
                 </div>
                 <div class="card_box row align-items-center mt-2">
@@ -37,14 +36,14 @@
                         <a href="#demoVideo" class="btn card_box__text_button col-12">Lihat Demo</a>
                     </div>
                     <div class="col-7">
-                        <p class="card_box__text mb-0">Simak video pelatihan dari instruktur berpengalaman untuk program pilihanmu </p>
+                        <p class="card_box__text mb-0">Simak video pelatihan untuk program pilihanmu </p>
                     </div>
                 </div>
             </div>
             <!-- Fasilitas Studio -->
             <div class="text-white my-3 text-center">
                 <h1 class="title__center">Fasilitas Studio</h1>
-                <p class="desc__center">Mulai dari materi hingga studio dan matras. Sanggar Segar punya berbagai 
+                <p class="desc__center">Mulai dari materi hingga studio dan matras. Studio Segar punya berbagai 
                     fasilitas yang lengkap untuk menemani aktivitasmu dalam memahami seni.
                 </p>
                 <!-- Swiper -->
@@ -71,7 +70,7 @@
             <div class="text-center text-white ">
                 <h1 class="title__center">Jelajahi Kelas Senam</h1>
                 <p class="desc__center">Berbagai macam pilihan kelas senam maupun seni 
-                    dengan metode pelatihan terbaik yang sesuai dengan keinginanmu
+                    dengan metode pelatihan terbaik sesuai dengan keinginanmu
                 </p>
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item mb-2 rounded_box">
@@ -180,8 +179,8 @@
                       </div>
                     </div>
                 </div>
-                <div class="mt-2">
-                    <a class="btn btn-secondary fw-semibold"
+                <div class="mt-3">
+                    <a class="btn button_ain_text_color2 fw-semibold"
                     href="https://wa.me/6281239110189?text=Saya%20tertarik%20mendaftar%20kelas%20di%20sanggar%20segar.%20Boleh%20tanya-tanya%20dulu?" 
                     >Daftar Kelas Sekarang</a>
                 </div>
@@ -191,10 +190,10 @@
                 <h1 class="title__center">Instruktur Pelatihan</h1>
                 <p class="desc__center">
                   Mereka yang ahli dalam bidangnya dan siap untuk 
-                  membimbing kamu dalam proses belajar seni di Sanggar Segar
+                  membimbing kamu dalam proses belajar kebugaran di Studio Segar
                 </p>
                 <div class="swiper swiperInstructur">
-                  <div class="swiper-wrapper pb-4 ">
+                  <div class="swiper-wrapper pb-4 p-1">
                     <% instructors.forEach((instructor)=>{%>
                       <div class="swiper-slide swiper-instructur-card">
                           <img src="<%= instructor.img %>" class="bg-transparent" alt="">
@@ -216,32 +215,32 @@
         </div>
     </div>
     <div class="container why_sanggar text-center">
-        <h5 class="title">Kenapa Harus Sanggar Segar?</h5>
+        <h5 class="title">Kenapa Harus Studio Segar?</h5>
         <p class="desc">
-          Kami sadar bahwa kamu memiliki potensi yang besar
-          dalam memahami seni tari baik untuk kebutuhan profesional
+          Kami sadar bahwa kamu punya potensi yang besar
+          untuk memahami senam dan tari untuk kebutuhan profesional
           maupun kebutuhan kebugaran.
         </p>
         <img src="/img/icon/Learning-60px.svg">
         <h6 class="caption">Dibimbing dari Awam</h6>
         <p class="desc">
-          Pemahamanmu masih sedikit? Atau mungkin belum penah
-          sama sekali untuk menari? Tenang!!! kamu akan dibimbing 
+          Pemahamanmu masih sedikit? Atau mungkin belum pernah
+          sama sekali? Tenang!!!<br> Kamu akan dibimbing 
           oleh instruktur terlatih dan profesional yang sudah berpengalaman dalam bidangnya hingga mahir dalam praktiknya.
         </p>
         <img src="/img/icon/Expert-60px.svg">
         <h6 class="caption">Belajar dari Ahlinya</h6>
         <p class="desc">
-          Tenaga ahli instuktur profesional di Sanggar Segar memiliki pengalaman 
-          lebih dari 10 tahun dalam membimbing talenta agar bisa cepat mahir dalam 
-          seni yang sesuai dengan pilihanmu. 
+          Tenaga ahli instruktur profesional di Studio Segar punya pengalaman 
+          lebih dari 10 tahun dalam membimbing talenta yang membuatmu cepat mahir sesuai dengan
+          senam dan tari pilihanmu.
         </p>
         <img src="/img/icon/Partner-60px.svg">
-        <h6 class="caption">Jadi Partner Sanggar Segar</h6>
+        <h6 class="caption">Jadi Partner Studio Segar</h6>
         <p class="desc">
-          Lulus dari Sanggar Segar, tapi bingung habis itu mau ngapain? Tenang!!! 
-          kamu akan dibantu untuk menyalurkan bakatmu melalui partnership yang tergabung 
-          dalam komunitas Sanggar Segar.
+          Lulus dari Studio Segar, tapi bingung habis itu mau ngapain? Tenang!!!
+          Kamu akan dibantu untuk menyalurkan bakatmu melalui partnership dan tergabung 
+          dalam komunitas Studio Segar.
         </p>
     </div>
     <div class="join_now">
@@ -249,14 +248,14 @@
         <div class="card card_join">
           <div class="card-body ">
             <h5 class="title">Gabung Sekarang Juga!</h5>
-            <p class="desc">Simpan dan amankan kursi kamu untuk bergabung dalam pelatihan intensif seni dari sanggar kami!</p>
+            <p class="desc">Simpan dan amankan kursimu untuk bergabung dalam pelatihan intensif kelas senam dan tari dari studio kami!</p>
             <a href=https://wa.me/6281239110189?text=Saya%20tertarik%20mendaftar%20kelas%20di%20sanggar%20segar." target="_blank"
             class="btn button">Hubungi Kami!</a>
           </div>
         </div>
         <h5 class="title">Apa Kata Mereka?</h5>
         <p class="desc">
-          Lihat kata mereka yang sudah merasakan serunya bergabung dengan Sanggar Segar 
+          Lihat kata mereka yang sudah merasakan serunya bergabung dengan Studio Segar 
           dan meraih keinginan mereka, mulai dari kebutuhan pribadi hingga kebutuhan profesional.
           Kamu adalah selanjutnya?!
         </p>
@@ -264,13 +263,13 @@
           <div class="swiper-wrapper">
             <% testimonies.forEach((testimony)=>{%>
               <div class="swiper-slide">
-                <div class="card">
-                  <img src="<%= testimony.img %>" class="d-block w-25 mx-auto my-3" alt="<%= testimony.alt %>">
+                <div class="card p-3">
+                  <img src="<%= testimony.img %>" class="d-block w-25 mx-auto my-1" alt="<%= testimony.alt %>">
                   <div class="card-body text-center carousel_card__testimony">
                     <h5><%= testimony.testimonyName %></h5>
                     <p><%= testimony.testimonyJob %></p>
                     <hr>
-                    <p><%= testimony.desc %></p>
+                    <p class=""><%= testimony.desc %></p>
                   </div>
                 </div>
               </div>
@@ -284,8 +283,8 @@
     </div>
     <div class="container testimony">
       <h5>Media Partner</h5>
-      <div class="swiper swiperPartner py-4" >
-        <div class="swiper-wrapper">
+      <div class="swiper swiperPartner py-2" >
+        <div class="swiper-wrapper align-items-center">
           <% mediaPartners.forEach((partner)=>{ %>
             <div class="swiper-slide">
               <img src="<%= partner.img %>" class="d-block w-75" alt="<%= partner.alt %>">
@@ -298,13 +297,20 @@
       </div>
       <h5 id="demoVideo">Masih Ragu Untuk Join?</h5>
       <div class="shadow_box">
-        <div class="ratio ratio-21x9  py-5 youTubeContainer">
+        <div class="ratio ratio-21x9  py-4 youTubeContainer">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/ia0oJnEkNEM?controls=0" 
           title="Video 2 LKP Segar" frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          loading="lazy"
           allowfullscreen></iframe>
         </div>
       </div>
+      <div class="mt-3">
+        <a class="btn button_ain_text_color2 fw-semibold"
+        href="https://wa.me/6281239110189?text=Saya%20tertarik%20mendaftar%20kelas%20di%20sanggar%20segar.%20Boleh%20tanya-tanya%20dulu?" 
+        target="_blank"
+        >Gabung Sekarang Juga</a>
+    </div>
     </div>
     <%- include('../partials/footer') %>
     <script src="/js/swiperConf.js"></script>
