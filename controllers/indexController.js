@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const {
   headerTitles,
   facilities,
@@ -32,7 +34,7 @@ exports.getAboutView = (req, res) => {
     headerTitle: headerTitles.about,
     facilites: facilities,
     mediaPartners: mediaPartners,
-    API_KEY: '',
+    API_KEY: process.env.GOOGLE_API_KEY,
   });
 };
 
